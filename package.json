@@ -5,7 +5,7 @@
   "type": "module",
 "scripts": {
   "dev": "vite",
-  "build": "npx vite build",
+  "build": "vite build --force",
   "preview": "vite preview"
 },
   "dependencies": {
@@ -31,4 +31,9 @@
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
   }
+}
+"vercel-build": {
+  "installCommand": "npm ci",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist"
 }
